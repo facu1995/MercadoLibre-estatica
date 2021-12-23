@@ -1,0 +1,560 @@
+:root {
+    --colorSubtitulos: #666;
+    --background: #ebebeb;
+    --white: #fff;
+    --nav: #fff159;
+    --nivel6: #a90f90;
+    --btnSuscribe: #3483fa;
+    --gray: #eae6e6;
+}
+/* Globales */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    background: var(--background);
+}a {
+    text-decoration: none;
+}
+body {
+    background: var(--background);
+}
+h2 {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+/* NAV**************************** */
+nav{
+    background: var(--nav);
+}
+    
+nav .superior{
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding: 7px 0 7px 0;
+    margin: auto;
+}
+    
+nav .superior .logo{
+    height: 31px;
+    width: 150px;
+    background-image: url(../ML/logo__large_plus.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav .superior .buscar{
+    margin: -1px 0 0 40px;
+}
+nav .superior .buscar input{
+    
+font-size: 1rem;
+    
+padding: 5px 10px;
+    
+width: 576px;
+    
+position: relative;
+}
+nav .superior .buscar button{
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 27px;
+    background: #fff;
+    border: none;
+    width: 33px;
+    border-left: 1px solid var(--colorSubtitulos);
+    position: absolute;
+    right: 790px;
+    top: 9px;
+    color: var(--colorSubtitulos);
+}
+
+nav .superior .disney{
+    height: 35px;
+    width: 285px;
+    background-image: url(../ML/nav-disney.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 0 51px;
+}
+
+nav .inferior{
+    display:flex;
+    width: 1200px;
+    padding: 5px 0;
+    align-items: center;
+    margin: auto;
+    color: var(--colorSubtitulos);
+}
+nav .inferior  i{
+
+font-size: 1.5rem;
+
+margin: 0 5px 0 0;
+}
+nav .inferior .direccion{
+    width: 143px;
+}
+nav .inferior .direccion p{
+    font-size: 0.8rem;
+}
+nav .inferior .direccion h4{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+nav .inferior ul{
+    display:flex;
+    list-style: none;
+    align-items: center;
+}
+nav .inferior .medio{
+    margin: 0 0 0 26px;
+}
+nav .inferior .fa-chevron-down{
+    font-size:0.5rem;
+}
+nav .inferior .der{
+    margin: 0 0 0 219px;
+}
+nav .perfil{
+    display:flex;
+    align-items: center;
+}
+
+nav .inferior ul li a{
+    padding: 5px 7px;
+    font-size: 0.8rem;
+}
+
+
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* slider */
+.section0{
+    margin: 0 auto 80px auto;
+    width:1600px;
+}
+/* .slider{
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul{
+    display:flex;
+    padding:0;
+    width: 700%;
+
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+} 
+.slider li{
+    width:100%;
+    list-style: none;
+}
+
+.slider img{
+    width:100%;
+} */
+.section0 .slider .img{
+    display: none;
+}
+
+.section0 .slider .activo{
+    display: block;
+}
+
+
+.section0 button{
+    border-radius: 2px;
+    height: 73px;
+    font-size: 31px;
+    padding: 0 7px;
+    border: none;
+    color: #3a80ff;
+    position: absolute;
+    top:170px;
+    background:#fff;
+}
+
+
+.section0  button i{
+    font-size:2rem;
+}
+
+.section0 .atras{
+    left:1px;
+}
+.section0  .siguiente{
+    right:1px;
+    z-index: 5;
+}
+
+/* PAYMENTS */
+.payments-container {
+    display: flex;
+    gap: 1rem;
+    background: var(--white);
+    justify-content: space-evenly;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+}
+.payments-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.payments {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    gap: 1rem;
+}
+.view-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--gray);
+    padding-left: 3rem;
+}
+
+/* RECOMENDACIONES */
+
+
+.recom-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--colorSubtitulos);
+    margin: 3rem 0 1rem 0;
+}
+.recom-carousel {
+    height: 400px;
+    display: flex;
+    gap: 1rem;
+}
+.card {
+    width: 230px;
+    height: 330px;
+    background: var(--white);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+}
+.card img {
+    width: 100%;
+}
+.card-info {
+    margin: 0.5rem 0 0 1rem;
+}
+.card-info span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.card-info p {
+    color: var(--colorSubtitulos);
+    margin-top: 1rem;
+}
+.card:hover {
+    box-shadow: 2px 6px 12px 0px rgba(65, 64, 64, 0.75);
+    transition: 0.3s;
+}
+
+/* jano''''''''''''''''''''''''''''' */
+#titulosP {
+    font-size: 20px;
+    font-weight: bold;
+}
+.container1 {
+    height: 300px;
+    margin: 0 0 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.gradient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: rgb(170, 15, 145);
+    background: linear-gradient(90deg, rgba(170, 15, 145, 1) 35%, rgba(15, 26, 82, 1) 100%);
+}
+.gradient p {
+    text-align: right;
+}
+.gradient div {
+    margin: 10px 10px 10px 20px;
+}
+.text1 {
+    margin: 20px 0 0 20px;
+}
+.ofertas {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 0 20px;
+}
+.disney,
+.star,
+.envio {
+    display: flex;
+    align-items: center;
+}
+.text2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 30px 0 20px;
+}
+.container1 button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3482FF;
+    color: #fff;
+    cursor: pointer;
+}
+.container1 button:hover {
+    background-color: #3072DD;
+}
+.container2 {
+    height: 310px;
+}
+.container2 #beneficios {
+    margin: 0 0 20px;
+    font-size: 25px;
+    color: rgb(83, 83, 83);
+}
+.container2 a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #3072DD;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+}
+.card1,
+.card2,
+.card3 {
+    position: relative;
+    margin: 0 10px 0 0;
+    display: flex;
+    align-items: flex-end;
+    width: 450px;
+    height: 250px;
+    border-radius: 7px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.card1 {
+    background-image: url(../ML/comboplus-mco-mla-mlm@2x.jpg);
+}
+.card2 {
+    background-image: url(../ML/hbo-max-mla-mco-mlc@2x.jpg);
+}
+.card3 {
+    background-image: url(../ML/paramount-widget-mla@2x.jpg);
+}
+.combo img {
+    margin: 0 0 5px 8px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.textocards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px 8px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+.textocards #titulosP {
+    font-size: 20px;
+}
+#subtitulo {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* CATEGORIES */
+.categories{
+    margin: 30px 0 40px 0;
+}
+.categories>*{
+    color: var(--colorSubtitulos);
+}
+.categories-wrap {
+    margin:20px 0 0 0;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    height: 340px;
+    display: flex;
+
+}
+.categories-block {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gray);
+}
+.categories-block i {
+    color: var(--btnSuscribe);
+}
+.categories-block:hover {
+    background: #3483fa;
+    color: var(--white);
+    
+}
+.categories-block:hover i {
+    color: var(--white);
+}
+
+.purchase-cards{
+    
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.pur-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+    position: relative;
+}
+.pur-icon{
+    margin: 0 0 10px 0;
+}
+.pur-card a{
+ text-decoration: none;
+ color: rgb(56, 56, 233);
+}
+.pur-card h2{
+    color: rgb(109, 108, 108);
+    text-align: center;
+}
+.pur-card p{
+    text-align: center;
+    color: grey;
+    margin: 10px 0 10px 0;
+}
+.pur-line{
+    position: absolute;
+    right: 0;
+    transform: translate(50%,50%);
+    height: 60px;
+    width: 1px;
+    background-color: grey;
+}
+.purchase-legal{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    width: 90%;
+    margin: 0 auto 50px auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    
+}
+
+.legal-card{
+    border: 1px solid grey;
+    padding: 15px 50px;
+}
+.legal-card h3{
+    color: grey;
+    margin: 0 0 5px 0;
+}
+.legal-card a{
+    text-decoration: none;
+    display: block;
+    color: rgb(56, 56, 233);
+    margin: 0 0 5px 0;
+
+
+}
+.qr{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+}
+.qr-img{
+    align-self: flex-end;
+    padding: 0 20px 0 0 ;
+}
+
+footer{
+    border-top: 2px solid grey;
+    padding: 20px 0 0 0;
+    position: relative;
+    background: #fff;
+}
+.foot-content{
+    width: 1600px;
+    margin: 0 auto;
+}
+.footer-items{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}   
+
+.foot-content p{
+    color: grey;
+    margin: 10px 0;
+}
+
+.more-info{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    padding: 4px 0 0 0;
+    text-align: center;
+    transform: translateY(-30px);
+    z-index: 2;
+    background: #fff;
+    height: 25px;
+    width: 158px;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left:1px solid grey;
+}
+
+@media screen and (max-width:879px) {
+    .pur-line{
+        display: none;
+    }
+}
+
+.section5{
+    margin: auto;
+    padding: 50px 0 0 0;
+    width:1600px;
+}
+.bg-blanco{
+    background:#fff;
+}
